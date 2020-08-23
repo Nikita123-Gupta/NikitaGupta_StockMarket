@@ -9,6 +9,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using StockMarket.AdminAPI.DBAccess;
+using StockMarket.AdminAPI.Repository;
+using StockMarket.AdminAPI.Services;
 
 namespace StockMarket.AdminAPI
 {
@@ -24,6 +27,10 @@ namespace StockMarket.AdminAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<AdminDBContext>();
+            services.AddScoped<AdminDBContext>();
+            services.AddTransient<IAdminRepository, AdminRepository>();
+            services.AddTransient<IAdminService, AdminService>();
             services.AddControllers();
         }
 
