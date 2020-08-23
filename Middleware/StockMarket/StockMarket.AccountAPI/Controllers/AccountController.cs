@@ -18,6 +18,11 @@ namespace StockMarket.AccountAPI.Controllers
         {
             ser = _ser;
         }
+        [HttpGet]
+        public IActionResult Get()
+        {
+            return Ok("Account Service");
+        }
 
         [HttpGet]
          [Route("Validate/{uname}/{pwd}")]

@@ -19,6 +19,11 @@ namespace StockMarket.AdminAPI.Controllers
         {
             adminService = ser;
         }
+        [HttpGet]
+        public IActionResult Get()
+        {
+            return Ok("Admin Service");
+        }
         [HttpPost]
         [Route("AddCompany")]
 

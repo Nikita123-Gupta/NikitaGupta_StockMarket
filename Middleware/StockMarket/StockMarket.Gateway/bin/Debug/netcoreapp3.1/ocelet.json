@@ -1,0 +1,54 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/Account",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 62415
+        }
+      ],
+      "UpstreamPathTemplate": "/Account/"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Account/{url}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 62415
+        }
+      ],
+      "UpstreamPathTemplate": "/Account/{url}"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Admin/{url}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 62422
+        }
+      ],
+      "UpstreamPathTemplate": "/Admin/{url}"
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/Admin",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 62422
+        }
+      ],
+      "UpstreamPathTemplate": "/Admin/"
+    }
+
+
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://loaclhost:57796"
+  }
+}
