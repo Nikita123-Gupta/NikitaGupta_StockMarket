@@ -42,6 +42,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "ClosedXML": {
+              "target": "Package",
+              "version": "[0.95.3, )"
+            },
             "EPPlus.Core": {
               "target": "Package",
               "version": "[1.5.4, )"

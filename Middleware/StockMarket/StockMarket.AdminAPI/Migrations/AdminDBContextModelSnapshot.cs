@@ -39,6 +39,36 @@ namespace StockMarket.AdminAPI.Migrations
                     b.ToTable("Company");
                 });
 
+            modelBuilder.Entity("StockMarket.AdminAPI.Models.IpoDetails", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("CompanyName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("DateTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<double>("Price")
+                        .HasColumnType("float");
+
+                    b.Property<string>("Remarks")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("StockExchange")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("TotalShares")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("IpoDetails");
+                });
+
             modelBuilder.Entity("StockMarket.AdminAPI.Models.StockPrice", b =>
                 {
                     b.Property<int>("RowId")

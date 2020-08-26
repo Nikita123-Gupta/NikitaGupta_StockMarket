@@ -42,19 +42,18 @@ namespace StockMarket.ExcelAPI.Controllers
         [Route("Export")]
         public IActionResult ExportData()
         {
-           
-                try
-                {
-                    repo.ExportData();
-                    return Ok();
-                }
-                catch (Exception ex)
-                {
-                    return StatusCode(500, ex.Message);
-                }
+            try
+            {
+                repo.ExportData();
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+                  }
 
-            
+
+            }
+
         }
-    
-}
 }

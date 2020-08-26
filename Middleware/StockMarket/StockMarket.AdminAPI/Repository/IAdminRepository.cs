@@ -12,5 +12,8 @@ namespace StockMarket.AdminAPI.Repository
         public void EditCompany(string companyCode, string ceo);
         public void DeleteCompany(string companyCode);
 
+        public void UpdateIpo(int Id, string StockExchange, int TotalShares);
+        public void AddIpo(IpoDetails item);
+        public void DeleteIpo(int Id);
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Authentication;
 using System.Security.Permissions;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
@@ -38,7 +39,7 @@ namespace StockMarket.AdminAPI.Controllers
                 return StatusCode(500, ex.Message);
             }
         }
-        [HttpPost]
+        [HttpPut]
         [Route("EditCompany/{code}/{ceo}")]
 
         public IActionResult Edit(string code , string ceo)
@@ -53,7 +54,7 @@ namespace StockMarket.AdminAPI.Controllers
                 return StatusCode(500, ex.Message);
             }
         }
-        [HttpPost]
+        [HttpDelete]
         [Route("DeleteCompany/{code}")]
 
         public IActionResult Delete(string code)
@@ -61,6 +62,49 @@ namespace StockMarket.AdminAPI.Controllers
             try
             {
                 adminService.DeleteCompany(code);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+        }
+        [HttpPut]
+        [Route("UpdateIpo/{Id}/{StockExchanges}/{TotalShares}")]
+
+        public IActionResult UpdateIPO(int Id, string StockExchanges, int TotalShares)
+        {
+            try
+            {
+                adminService.UpdateIpo(Id, StockExchanges, TotalShares);
+                return Ok();
+            }
+            catch(Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+        }
+        [HttpPost]
+        [Route("AddIpo")]
+        public IActionResult AddIPO(IpoDetails item)
+        {
+            try
+            {
+                adminService.AddIpo(item);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.ToString());
+            }
+        }
+        [HttpDelete]
+        [Route("DeleteIpo/{Id}")]
+        public IActionResult DeleteIPO(int Id)
+        {
+            try
+            {
+                adminService.DeleteIpo(Id);
                 return Ok();
             }
             catch (Exception ex)

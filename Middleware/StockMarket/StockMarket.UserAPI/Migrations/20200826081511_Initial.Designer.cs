@@ -5,12 +5,12 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using StockMarket.AdminAPI.DBAccess;
+using StockMarket.UserAPI.DBAccess;
 
-namespace StockMarket.AdminAPI.Migrations
+namespace StockMarket.UserAPI.Migrations
 {
-    [DbContext(typeof(AdminDBContext))]
-    [Migration("20200823111709_Initial")]
+    [DbContext(typeof(UserDbContext))]
+    [Migration("20200826081511_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -21,7 +21,7 @@ namespace StockMarket.AdminAPI.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("StockMarket.AdminAPI.Models.Company", b =>
+            modelBuilder.Entity("StockMarket.UserAPI.Models.Company", b =>
                 {
                     b.Property<string>("CompanyCode")
                         .HasColumnType("nvarchar(25)")
@@ -41,7 +41,37 @@ namespace StockMarket.AdminAPI.Migrations
                     b.ToTable("Company");
                 });
 
-            modelBuilder.Entity("StockMarket.AdminAPI.Models.StockPrice", b =>
+            modelBuilder.Entity("StockMarket.UserAPI.Models.IpoDetails", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("CompanyName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("DateTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<double>("Price")
+                        .HasColumnType("float");
+
+                    b.Property<string>("Remarks")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("StockExchange")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("TotalShares")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("IpoDetails");
+                });
+
+            modelBuilder.Entity("StockMarket.UserAPI.Models.StockPrice", b =>
                 {
                     b.Property<int>("RowId")
                         .ValueGeneratedOnAdd()
@@ -73,9 +103,9 @@ namespace StockMarket.AdminAPI.Migrations
                     b.ToTable("StockPrice");
                 });
 
-            modelBuilder.Entity("StockMarket.AdminAPI.Models.StockPrice", b =>
+            modelBuilder.Entity("StockMarket.UserAPI.Models.StockPrice", b =>
                 {
-                    b.HasOne("StockMarket.AdminAPI.Models.Company", "Company")
+                    b.HasOne("StockMarket.UserAPI.Models.Company", "Company")
                         .WithMany("StockPrices")
                         .HasForeignKey("CompanyCode");
                 });

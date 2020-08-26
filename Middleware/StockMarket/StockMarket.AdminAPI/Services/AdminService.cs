@@ -29,7 +29,19 @@ namespace StockMarket.AdminAPI.Services
             repo.DeleteCompany(companyCode);
         }
 
-       
+        public void UpdateIpo(int Id, string StockExchange, int TotalShares)
+        {
+            repo.UpdateIpo(Id, StockExchange, TotalShares);
+        }
 
+        public void AddIpo(IpoDetails item)
+        {
+            repo.AddIpo(item);
+        }
+
+        public void DeleteIpo(int Id)
+        {
+            repo.DeleteIpo(Id);
+        }
     }
 }

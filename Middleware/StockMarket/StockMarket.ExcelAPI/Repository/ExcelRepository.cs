@@ -7,7 +7,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Hosting;
 using System.IO;
 using OfficeOpenXml;
+using OfficeOpenXml.Style;
 using System.Text;
+using System.Web;
 using StockMarket.ExcelAPI.Models;
 using StockMarket.ExcelAPI.DBAcess;
 
@@ -16,31 +18,29 @@ namespace StockMarket.ExcelAPI.Repository
     public class ExcelRepository : IExcelRepository
     {
         private ExcelDBContext db;
-        
-        private readonly IWebHostEnvironment he;
+       
 
-        
-        public ExcelRepository(IWebHostEnvironment _he, ExcelDBContext _db )
+        public ExcelRepository( )
         {
-            db = _db;
-            he = _he;
+            db =  new ExcelDBContext();
+           
         }
 
-       
+        
         public void ExportData()
         {
-            string rootFolder = he.WebRootPath;
-            string fileName = @"ExportCustomers.xlsx";
+            
+            string filepath = @"E:/upload/exportStockPrice.xlsx";
 
-            FileInfo file = new FileInfo(Path.Combine(rootFolder, fileName));
+            FileInfo file = new FileInfo(filepath);
 
             using (ExcelPackage package = new ExcelPackage(file))
             {
 
-                IList<StockPrice> stock = db.StockPrices.ToList();
+                List<StockPrice> stock = db.StockPrices.ToList();
 
-                ExcelWorksheet worksheet = package.Workbook.Worksheets.Add("StockPrice");
-                int totalRows = stock.Count();
+                ExcelWorksheet worksheet = package.Workbook.Worksheets.Add("stockprice");
+                int totalrows = stock.Count();
 
                 worksheet.Cells[1, 1].Value = "RowId";
                 worksheet.Cells[1, 2].Value = "CompanyCode";
@@ -49,20 +49,21 @@ namespace StockMarket.ExcelAPI.Repository
                 worksheet.Cells[1, 5].Value = "Date";
                 worksheet.Cells[1, 6].Value = "Time";
                 int i = 0;
-                for (int row = 2; row <= totalRows + 1; row++)
+                for (int row = 2; row <= totalrows + 1; row++)
                 {
                     worksheet.Cells[row, 1].Value = stock[i].RowId;
                     worksheet.Cells[row, 2].Value = stock[i].CompanyCode;
                     worksheet.Cells[row, 3].Value = stock[i].StockExchange;
                     worksheet.Cells[row, 4].Value = stock[i].CurrentPrice;
-                    worksheet.Cells[row, 4].Value = stock[i].Date;
-                    worksheet.Cells[row, 4].Value = stock[i].Time;
+                    worksheet.Cells[row, 5].Value = stock[i].Date;
+                    worksheet.Cells[row, 6].Value = stock[i].Time;
                     i++;
                 }
 
                 package.Save();
 
             }
+            
         }
 
         public void ImportData(string filePath)

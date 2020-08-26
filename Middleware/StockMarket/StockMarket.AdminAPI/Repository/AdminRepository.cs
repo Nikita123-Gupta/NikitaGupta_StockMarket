@@ -22,10 +22,23 @@ namespace StockMarket.AdminAPI.Repository
             context.SaveChanges();
         }
 
+        public void AddIpo(IpoDetails item)
+        {
+            context.Add(item);
+            context.SaveChanges();
+        }
+
         public void DeleteCompany(string companyCode)
         {
             Company company = context.Companies.SingleOrDefault(c => c.CompanyCode == companyCode); 
             context.Remove(company);
+            context.SaveChanges();
+        }
+
+        public void DeleteIpo(int Id)
+        {
+            IpoDetails ipo = context.IpoDetails.SingleOrDefault(i => i.Id == Id);
+            context.Remove(ipo);
             context.SaveChanges();
         }
 
@@ -34,6 +47,14 @@ namespace StockMarket.AdminAPI.Repository
             Company company = context.Companies.SingleOrDefault(c => c.CompanyCode == companyCode);
             company.CEO = ceo;
             context.Update(company);
+            context.SaveChanges();
+        }
+        public void UpdateIpo(int Id, string StockExchange, int TotalShares)
+        {
+            IpoDetails ipo = context.IpoDetails.SingleOrDefault(c => c.Id == Id);
+            ipo.StockExchange = StockExchange;
+            ipo.TotalShares = TotalShares;
+            context.Update(ipo);
             context.SaveChanges();
         }
     }
