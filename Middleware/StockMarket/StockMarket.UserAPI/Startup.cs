@@ -31,6 +31,14 @@ namespace StockMarket.UserAPI
             services.AddScoped<UserDbContext>();
             services.AddTransient<IUserRepository, UserRepository>();
             services.AddTransient<IUserService, UserService>();
+            services.AddCors(c =>
+            {
+                c.AddPolicy("AllowOrigin", options =>
+       options.AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                );
+            });
             services.AddControllers();
         }
 
@@ -45,6 +53,7 @@ namespace StockMarket.UserAPI
             app.UseRouting();
 
             app.UseAuthorization();
+            app.UseCors("AllowOrigin");
 
             app.UseEndpoints(endpoints =>
             {

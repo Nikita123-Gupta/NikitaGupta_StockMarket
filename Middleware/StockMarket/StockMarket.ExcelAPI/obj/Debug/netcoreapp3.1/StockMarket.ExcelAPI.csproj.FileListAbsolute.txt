@@ -86,5 +86,3 @@ E:\dotnetprojects\NikitaGupta_StockMarket\Middleware\StockMarket\StockMarket.Exc
 E:\dotnetprojects\NikitaGupta_StockMarket\Middleware\StockMarket\StockMarket.ExcelAPI\bin\Debug\netcoreapp3.1\DocumentFormat.OpenXml.dll
 E:\dotnetprojects\NikitaGupta_StockMarket\Middleware\StockMarket\StockMarket.ExcelAPI\bin\Debug\netcoreapp3.1\ExcelNumberFormat.dll
 E:\dotnetprojects\NikitaGupta_StockMarket\Middleware\StockMarket\StockMarket.ExcelAPI\bin\Debug\netcoreapp3.1\System.IO.Packaging.dll
-E:\dotnetprojects\NikitaGupta_StockMarket\Middleware\StockMarket\StockMarket.ExcelAPI\obj\Debug\netcoreapp3.1\StockMarket.ExcelAPI.csproj.CoreCompileInputs.cache
-E:\dotnetprojects\NikitaGupta_StockMarket\Middleware\StockMarket\StockMarket.ExcelAPI\obj\Debug\netcoreapp3.1\StockMarket.ExcelAPI.MvcApplicationPartsAssemblyInfo.cache

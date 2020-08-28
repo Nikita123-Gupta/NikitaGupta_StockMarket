@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\StockMarket.AccountAPI",
+    "\\StockMarket.AccountAPI\\bin\\Release",
+    "\\StockMarket.AccountAPI\\Repository",
+    "\\StockMarket.AccountAPI\\Services",
+    "\\StockMarket.AdminAPI",
+    "\\StockMarket.AdminAPI\\bin"
+  ],
+  "SelectedNode": "\\StockMarket.AccountAPI",
+  "PreviewInSolutionExplorer": false
+}

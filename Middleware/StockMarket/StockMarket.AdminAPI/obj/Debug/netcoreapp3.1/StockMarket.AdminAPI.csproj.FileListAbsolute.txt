@@ -77,5 +77,3 @@ E:\dotnetprojects\NikitaGupta_StockMarket\Middleware\StockMarket\StockMarket.Adm
 E:\dotnetprojects\NikitaGupta_StockMarket\Middleware\StockMarket\StockMarket.AdminAPI\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 E:\dotnetprojects\NikitaGupta_StockMarket\Middleware\StockMarket\StockMarket.AdminAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 E:\dotnetprojects\NikitaGupta_StockMarket\Middleware\StockMarket\StockMarket.AdminAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-E:\dotnetprojects\NikitaGupta_StockMarket\Middleware\StockMarket\StockMarket.AdminAPI\obj\Debug\netcoreapp3.1\StockMarket.AdminAPI.csproj.CoreCompileInputs.cache
-E:\dotnetprojects\NikitaGupta_StockMarket\Middleware\StockMarket\StockMarket.AdminAPI\obj\Debug\netcoreapp3.1\StockMarket.AdminAPI.MvcApplicationPartsAssemblyInfo.cache

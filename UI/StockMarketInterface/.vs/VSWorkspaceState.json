@@ -4,12 +4,13 @@
     "\\src",
     "\\src\\app",
     "\\src\\app\\Admin",
-    "\\src\\app\\Admin\\admin-land-page",
     "\\src\\app\\Admin\\admin-login",
+    "\\src\\app\\home-page",
+    "\\src\\app\\Models",
     "\\src\\app\\User",
     "\\src\\app\\User\\sign-up",
     "\\src\\app\\User\\user-landing-page"
   ],
-  "SelectedNode": "\\src\\app\\User\\user-landing-page\\user-landing-page.component.css",
+  "SelectedNode": "\\src\\app\\Models\\ipo-details.ts",
   "PreviewInSolutionExplorer": false
 }

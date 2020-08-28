@@ -111,8 +111,6 @@ E:\dotnetprojects\NikitaGupta_StockMarket\Middleware\StockMarket\StockMarket.Acc
 E:\dotnetprojects\NikitaGupta_StockMarket\Middleware\StockMarket\StockMarket.AccountAPI\obj\Debug\netcoreapp3.1\StockMarket.AccountAPI.csprojAssemblyReference.cache
 E:\dotnetprojects\NikitaGupta_StockMarket\Middleware\StockMarket\StockMarket.AccountAPI\obj\Debug\netcoreapp3.1\StockMarket.AccountAPI.AssemblyInfoInputs.cache
 E:\dotnetprojects\NikitaGupta_StockMarket\Middleware\StockMarket\StockMarket.AccountAPI\obj\Debug\netcoreapp3.1\StockMarket.AccountAPI.AssemblyInfo.cs
-E:\dotnetprojects\NikitaGupta_StockMarket\Middleware\StockMarket\StockMarket.AccountAPI\obj\Debug\netcoreapp3.1\StockMarket.AccountAPI.csproj.CoreCompileInputs.cache
-E:\dotnetprojects\NikitaGupta_StockMarket\Middleware\StockMarket\StockMarket.AccountAPI\obj\Debug\netcoreapp3.1\StockMarket.AccountAPI.MvcApplicationPartsAssemblyInfo.cache
 E:\dotnetprojects\NikitaGupta_StockMarket\Middleware\StockMarket\StockMarket.AccountAPI\obj\Debug\netcoreapp3.1\StockMarket.AccountAPI.RazorTargetAssemblyInfo.cache
 E:\dotnetprojects\NikitaGupta_StockMarket\Middleware\StockMarket\StockMarket.AccountAPI\obj\Debug\netcoreapp3.1\StockMarket.AccountAPI.csproj.CopyComplete
 E:\dotnetprojects\NikitaGupta_StockMarket\Middleware\StockMarket\StockMarket.AccountAPI\obj\Debug\netcoreapp3.1\staticwebassets\StockMarket.AccountAPI.StaticWebAssets.Manifest.cache

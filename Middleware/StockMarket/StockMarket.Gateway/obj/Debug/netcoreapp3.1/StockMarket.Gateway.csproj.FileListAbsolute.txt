@@ -23,9 +23,6 @@ E:\dotnetprojects\NikitaGupta_StockMarket\Middleware\StockMarket\StockMarket.Gat
 E:\dotnetprojects\NikitaGupta_StockMarket\Middleware\StockMarket\StockMarket.Gateway\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 E:\dotnetprojects\NikitaGupta_StockMarket\Middleware\StockMarket\StockMarket.Gateway\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 E:\dotnetprojects\NikitaGupta_StockMarket\Middleware\StockMarket\StockMarket.Gateway\bin\Debug\netcoreapp3.1\Ocelot.dll
-E:\dotnetprojects\NikitaGupta_StockMarket\Middleware\StockMarket\StockMarket.Gateway\obj\Debug\netcoreapp3.1\StockMarket.Gateway.csproj.CoreCompileInputs.cache
-E:\dotnetprojects\NikitaGupta_StockMarket\Middleware\StockMarket\StockMarket.Gateway\obj\Debug\netcoreapp3.1\StockMarket.Gateway.MvcApplicationPartsAssemblyInfo.cs
-E:\dotnetprojects\NikitaGupta_StockMarket\Middleware\StockMarket\StockMarket.Gateway\obj\Debug\netcoreapp3.1\StockMarket.Gateway.MvcApplicationPartsAssemblyInfo.cache
 E:\dotnetprojects\NikitaGupta_StockMarket\Middleware\StockMarket\StockMarket.Gateway\obj\Debug\netcoreapp3.1\StockMarket.Gateway.csproj.CopyComplete
 E:\dotnetprojects\NikitaGupta_StockMarket\Middleware\StockMarket\StockMarket.Gateway\obj\Debug\netcoreapp3.1\StockMarket.Gateway.dll
 E:\dotnetprojects\NikitaGupta_StockMarket\Middleware\StockMarket\StockMarket.Gateway\obj\Debug\netcoreapp3.1\StockMarket.Gateway.pdb

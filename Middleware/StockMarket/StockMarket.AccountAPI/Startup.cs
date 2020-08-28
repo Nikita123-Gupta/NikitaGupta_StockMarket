@@ -32,6 +32,14 @@ namespace StockMarket.AccountAPI
             services.AddScoped<StockDBContext>();
             services.AddTransient<IAccountRepository, AccountRepository>();
             services.AddTransient<IAccountService, AccountService>();
+            services.AddCors(c =>
+            {
+                c.AddPolicy("AllowOrigin", options =>
+       options.AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                );
+            });
             services.AddControllers();
         }
 
@@ -46,6 +54,8 @@ namespace StockMarket.AccountAPI
             app.UseRouting();
 
             app.UseAuthorization();
+            app.UseCors("AllowOrigin");
+
 
             app.UseEndpoints(endpoints =>
             {
