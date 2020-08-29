@@ -5,8 +5,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 62415
+          "host": "localhost",
+          "port": 51412
         }
       ],
       "UpstreamPathTemplate": "/Account/"
@@ -17,7 +17,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 62415
+          "Port": 51412
         }
       ],
       "UpstreamPathTemplate": "/Account/{url}"
@@ -28,7 +28,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 62422
+          "Port": 51472
         }
       ],
       "UpstreamPathTemplate": "/Admin/{url}"
@@ -40,15 +40,61 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 62422
+          "Port": 51472
         }
       ],
       "UpstreamPathTemplate": "/Admin/"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Excel/{url}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 51484
+        }
+      ],
+      "UpstreamPathTemplate": "/Excel/{url}"
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/Excel",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 51484
+        }
+      ],
+      "UpstreamPathTemplate": "/Excel/"
+    },
+    {
+      "DownstreamPathTemplate": "/api/User/{url}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 51979
+        }
+      ],
+      "UpstreamPathTemplate": "/User/{url}"
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/User",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 51979
+        }
+      ],
+      "UpstreamPathTemplate": "/User/"
     }
 
 
   ],
   "GlobalConfiguration": {
-    "BaseUrl": "https://loaclhost:57796"
+    "BaseUrl": "https://loaclhost:51789"
   }
 }

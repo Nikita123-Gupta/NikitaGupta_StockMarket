@@ -22,7 +22,7 @@ namespace StockMarket.Gateway
                 {
                     webBuilder.ConfigureAppConfiguration((host, config) =>
                     {
-                        config.AddJsonFile("ocelot.json");
+                        config.AddJsonFile("ocelet.json");
 
                     });
                     webBuilder.UseStartup<Startup>();

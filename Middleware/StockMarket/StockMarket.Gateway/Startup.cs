@@ -50,12 +50,12 @@ namespace StockMarket.Gateway
 
             app.UseAuthorization();
             app.UseCors("AllowOrigin");
-            app.UseOcelot();
+            
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
-           
+            app.UseOcelot();
         }
     }
 }

@@ -118,3 +118,5 @@ E:\dotnetprojects\NikitaGupta_StockMarket\Middleware\StockMarket\StockMarket.Acc
 E:\dotnetprojects\NikitaGupta_StockMarket\Middleware\StockMarket\StockMarket.AccountAPI\obj\Debug\netcoreapp3.1\StockMarket.AccountAPI.dll
 E:\dotnetprojects\NikitaGupta_StockMarket\Middleware\StockMarket\StockMarket.AccountAPI\obj\Debug\netcoreapp3.1\StockMarket.AccountAPI.pdb
 E:\dotnetprojects\NikitaGupta_StockMarket\Middleware\StockMarket\StockMarket.AccountAPI\obj\Debug\netcoreapp3.1\StockMarket.AccountAPI.genruntimeconfig.cache
+E:\dotnetprojects\NikitaGupta_StockMarket\Middleware\StockMarket\StockMarket.AccountAPI\obj\Debug\netcoreapp3.1\StockMarket.AccountAPI.csproj.CoreCompileInputs.cache
+E:\dotnetprojects\NikitaGupta_StockMarket\Middleware\StockMarket\StockMarket.AccountAPI\obj\Debug\netcoreapp3.1\StockMarket.AccountAPI.MvcApplicationPartsAssemblyInfo.cache
