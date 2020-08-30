@@ -1,14 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-
 @Component({
-  selector: 'app-admin-land-page',
-  templateUrl: './admin-land-page.component.html',
-  styleUrls: ['./admin-land-page.component.css']
+  selector: 'app-update-ipo',
+  templateUrl: './update-ipo.component.html',
+  styleUrls: ['./update-ipo.component.css']
 })
-export class AdminLandPageComponent implements OnInit {
+export class UpdateIPOComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
   }

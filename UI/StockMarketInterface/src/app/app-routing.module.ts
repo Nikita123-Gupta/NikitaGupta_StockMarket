@@ -6,6 +6,9 @@ import { UserLandingPageComponent } from './User/user-landing-page/user-landing-
 import { AdminLoginComponent } from './Admin/admin-login/admin-login.component';
 import { UserLoginComponent } from './User/user-login/user-login.component';
 import { SignUpComponent } from './User/sign-up/sign-up.component';
+import { ImportComponent } from './Admin/import/import.component';
+import { ManageCompanyComponent } from './Admin/manage-company/manage-company.component';
+import { UpdateIPOComponent } from './Admin/update-ipo/update-ipo.component';
 
 
 const routes: Routes = [
@@ -15,6 +18,9 @@ const routes: Routes = [
   { path: 'user-land-page', component: UserLandingPageComponent },
   { path: 'user-login', component: UserLoginComponent },
   { path: 'sign-up', component: SignUpComponent },
+  { path: 'import', component: ImportComponent },
+  { path: 'manage-company', component: ManageCompanyComponent },
+  { path: 'update-ipo', component: UpdateIPOComponent },
   { path: '', redirectTo: 'home-page', pathMatch:"full"}
 ];
 

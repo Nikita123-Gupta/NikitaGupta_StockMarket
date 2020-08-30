@@ -1,0 +1,51 @@
+.button {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  float: left;
+  border: 1px solid green;
+}
+
+.container {
+  margin-left: 250px;
+}
+
+
+.cont {
+  margin-right: 100px;
+  height: 50px;
+  font-size: 16px;
+  vertical-align: middle;
+  text-align: right;
+}
+
+.contain {
+  margin-left: 315px;
+  margin-top: 100px;
+  text-align: left;
+}
+
+table {
+  width: 60%;
+  border: 1px solid black;
+}
+
+td {
+  height: 50px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.butn {
+  border-radius: 45%;
+  border: 2px solid #f44336;
+  margin: 6px 6px 6px 6px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+

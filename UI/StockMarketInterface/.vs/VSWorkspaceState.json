@@ -4,13 +4,13 @@
     "\\src",
     "\\src\\app",
     "\\src\\app\\Admin",
+    "\\src\\app\\Admin\\admin-land-page",
     "\\src\\app\\Admin\\admin-login",
+    "\\src\\app\\Admin\\import",
+    "\\src\\app\\Admin\\update-ipo",
     "\\src\\app\\home-page",
-    "\\src\\app\\Models",
-    "\\src\\app\\User",
-    "\\src\\app\\User\\sign-up",
-    "\\src\\app\\User\\user-landing-page"
+    "\\src\\app\\Models"
   ],
-  "SelectedNode": "\\src\\app\\Models\\ipo-details.ts",
+  "SelectedNode": "\\src\\app\\Admin\\manage-company\\manage-company.component.css",
   "PreviewInSolutionExplorer": false
 }
