@@ -2,11 +2,11 @@
   <table>
     <tr>
       <td>Admin Name</td>
-      <td><input type="text"></td>
+      <td><input type="text" required="required" [(ngModel)]="uname"></td>
     </tr>
     <tr>
       <td>Password</td>
-      <td><input type="password"></td>
+      <td><input type="password" required="required" [(ngModel)]="password"></td>
     </tr>
   </table>
         <button class="button" (click)="Validate()">LogIn</button>

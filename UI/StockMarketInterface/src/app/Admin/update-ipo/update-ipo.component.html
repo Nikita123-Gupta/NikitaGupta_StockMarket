@@ -12,38 +12,38 @@
   <table>
     <tr>
       <td>ID</td>
-      <td><input type="number"></td>
+      <td><input type="number" [(ngModel)]="id"></td>
     </tr>
     <tr>
       <td>CustomerCode</td>
-      <td><input type="text"></td>
+      <td><input type="text" [(ngModel)]="code"></td>
     </tr>
     <tr>
       <td>StockExchange</td>
-      <td><input type="text"></td>
+      <td><input type="text" [(ngModel)]="stock"></td>
     </tr>
     <tr>
       <td>Price</td>
-      <td><input type="number"></td>
+      <td><input type="number" [(ngModel)]="price"></td>
     </tr>
     <tr>
       <td>TotalShares</td>
-      <td><input type="number"></td>
+      <td><input type="number" [(ngModel)]="share"></td>
     </tr>
     <tr>
       <td>DateTime</td>
-      <td><input type="datetime"></td>
+      <td><input type="datetime" [(ngModel)]="datetime"></td>
     </tr>
     <tr>
       <td>Remarks</td>
-      <td><input type="text"></td>
+      <td><input type="text" [(ngModel)]="remarks"></td>
     </tr>
     <tr>
       <td colspan="2">
-        <button class="butn">Add</button>
-        <button class="butn">Edit</button>
-        <button class="butn">Delete</button>
-        <button class="butn">Get</button>
+        <button class="butn" (click)="Add()">Add</button>
+        <button class="butn" (click)="Update()">Edit</button>
+        <button class="butn" (click)="Delete()">Delete</button>
+        <button class="butn" (click)="Get()">Get</button>
       </td>
     </tr>
   </table>

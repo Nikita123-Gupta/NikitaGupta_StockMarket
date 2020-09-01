@@ -7,13 +7,19 @@ import { Router } from '@angular/router';
   styleUrls: ['./admin-login.component.css']
 })
 export class AdminLoginComponent implements OnInit {
-
+  uname: string;
+  password: string;
   constructor(private router:Router) { }
 
   ngOnInit(): void {
   }
   Validate() {
-    this.router.navigateByUrl('admin-land-page');
+    if (this.uname == "Admin" && this.password == "password") {
+      this.router.navigateByUrl('admin-land-page');
+    }
+    else {
+      alert('Invalid Credentials');
+    }
   }
 
 }

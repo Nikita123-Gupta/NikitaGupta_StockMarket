@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
@@ -12,6 +13,7 @@ import { SignUpComponent } from './User/sign-up/sign-up.component';
 import { ImportComponent } from './Admin/import/import.component';
 import { ManageCompanyComponent } from './Admin/manage-company/manage-company.component';
 import { UpdateIPOComponent } from './Admin/update-ipo/update-ipo.component';
+import { AdminService } from './Shared/admin.service';
 
 @NgModule({
   declarations: [
@@ -29,9 +31,10 @@ import { UpdateIPOComponent } from './Admin/update-ipo/update-ipo.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [AdminService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

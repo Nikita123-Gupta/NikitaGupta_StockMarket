@@ -13,22 +13,22 @@
   <table>
     <tr>
       <td>CompanyCode</td>
-      <td><input type="text"></td>
+      <td><input type="text" [(ngModel)]="code"></td>
     </tr>
     <tr>
       <td>CompanyName</td>
-      <td><input type="text"></td>
+      <td><input type="text" [(ngModel)]="name"></td>
     </tr>
     <tr>
       <td>CEO</td>
-      <td><input type="text"></td>
+      <td><input type="text" [(ngModel)]="ceo"></td>
     </tr>
     <tr>
       <td colspan="2">
-        <button class="button">Add</button>
-        <button class="button">Edit</button>
-        <button class="button">Delete</button>
-        <button class="button">Get</button>
+        <button class="button" (click)="Add()">Add</button>
+        <button class="button" (click)="Update()">Edit</button>
+        <button class="button" (click)="Delete()">Delete</button>
+        <button class="button" (click)="Get()">Get</button>
       </td>
     </tr>
   </table>

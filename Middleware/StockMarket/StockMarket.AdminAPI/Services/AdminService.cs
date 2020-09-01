@@ -19,9 +19,9 @@ namespace StockMarket.AdminAPI.Services
             repo.AddCompany(company);
         }
 
-        public void EditCompany(string companyCode, string ceo)
+        public void EditCompany(Company company)
         {
-            repo.EditCompany(companyCode, ceo);
+            repo.EditCompany(company);
         }
 
         public void DeleteCompany(string companyCode)
@@ -29,9 +29,9 @@ namespace StockMarket.AdminAPI.Services
             repo.DeleteCompany(companyCode);
         }
 
-        public void UpdateIpo(int Id, string StockExchange, int TotalShares)
+        public void UpdateIpo(IpoDetails ipo)
         {
-            repo.UpdateIpo(Id, StockExchange, TotalShares);
+            repo.UpdateIpo(ipo);
         }
 
         public void AddIpo(IpoDetails item)
@@ -42,6 +42,16 @@ namespace StockMarket.AdminAPI.Services
         public void DeleteIpo(int Id)
         {
             repo.DeleteIpo(Id);
+        }
+
+        public List<Company> GetAllCompany()
+        {
+            return repo.GetAllCompany();
+        }
+
+        public List<IpoDetails> GetAllIpo()
+        {
+            return repo.GetAllIpo();
         }
     }
 }

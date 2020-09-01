@@ -42,19 +42,26 @@ namespace StockMarket.AdminAPI.Repository
             context.SaveChanges();
         }
 
-        public void EditCompany(string companyCode, string ceo)
+        public void EditCompany(Company company)
         {
-            Company company = context.Companies.SingleOrDefault(c => c.CompanyCode == companyCode);
-            company.CEO = ceo;
-            context.Update(company);
+            context.Companies.Update(company);
             context.SaveChanges();
         }
-        public void UpdateIpo(int Id, string StockExchange, int TotalShares)
+
+        public List<Company> GetAllCompany()
         {
-            IpoDetails ipo = context.IpoDetails.SingleOrDefault(c => c.Id == Id);
-            ipo.StockExchange = StockExchange;
-            ipo.TotalShares = TotalShares;
-            context.Update(ipo);
+            return context.Companies.ToList();
+        }
+
+        public List<IpoDetails> GetAllIpo()
+        {
+            return context.IpoDetails.ToList();
+        }
+
+        public void UpdateIpo(IpoDetails ipo)
+        {
+           
+            context.IpoDetails.Update(ipo);
             context.SaveChanges();
         }
     }

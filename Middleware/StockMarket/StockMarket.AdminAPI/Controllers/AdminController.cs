@@ -25,6 +25,34 @@ namespace StockMarket.AdminAPI.Controllers
         {
             return Ok("Admin Service");
         }
+        [HttpGet]
+        [Route("GetCompany")]
+        public IActionResult GetAllCompany()
+        {
+            try
+            {
+                List<Company> list = adminService.GetAllCompany();
+                return Ok(list);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+        }
+        [HttpGet]
+        [Route("GetIpo")]
+        public IActionResult GetAllIpo()
+        {
+            try
+            {
+                List<IpoDetails> list = adminService.GetAllIpo();
+                return Ok(list);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+        }
         [HttpPost]
         [Route("AddCompany")]
 
@@ -40,13 +68,13 @@ namespace StockMarket.AdminAPI.Controllers
             }
         }
         [HttpPut]
-        [Route("EditCompany/{code}/{ceo}")]
+        [Route("EditCompany")]
 
-        public IActionResult Edit(string code , string ceo)
+        public IActionResult Edit(Company company)
         {
             try
             {
-                adminService.EditCompany(code,ceo);
+                adminService.EditCompany(company);
                 return Ok();
             }
             catch (Exception ex)
@@ -70,13 +98,13 @@ namespace StockMarket.AdminAPI.Controllers
             }
         }
         [HttpPut]
-        [Route("UpdateIpo/{Id}/{StockExchanges}/{TotalShares}")]
+        [Route("UpdateIpo")]
 
-        public IActionResult UpdateIPO(int Id, string StockExchanges, int TotalShares)
+        public IActionResult UpdateIPO(IpoDetails ipo)
         {
             try
             {
-                adminService.UpdateIpo(Id, StockExchanges, TotalShares);
+                adminService.UpdateIpo(ipo);
                 return Ok();
             }
             catch(Exception ex)
