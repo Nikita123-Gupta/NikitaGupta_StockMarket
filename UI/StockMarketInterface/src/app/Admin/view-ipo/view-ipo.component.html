@@ -1,0 +1,28 @@
+<table class="table table-bordered table-hover">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Stock Exchange</th>
+      <th>Price</th>
+      <th>Total Shares</th>
+      <th>DateTime</th>
+      <th>Remarks</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of list">
+      <th>{{this.item.Id}}</th>
+      <th>{{this.item.CompanyName|uppercase}}</th>
+      <th>{{this.item.StockExchange|uppercase}}</th>
+      <th>{{this.item.Price|currency:'INR':true}}</th>
+      <th>{{this.item.TotalShares}}</th>
+      <th>{{this.item.DateTime}}</th>
+      <th>{{this.item.Remarks}}</th>
+    </tr>
+  </tbody>
+
+</table>
+
+<button class="button" (click)="Back()">Back</button>
+

@@ -1,0 +1,18 @@
+<table class="table table-bordered table-hover">
+  <thead>
+    <tr>
+      <th>CompanyCode</th>
+      <th>CompanyName</th>
+      <th>CEO</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of list">
+      <th>{{this.item.CompanyCode}}</th>
+      <th>{{this.item.CompanyName|uppercase}}</th>
+      <th>{{this.item.CEO|uppercase}}</th>
+    </tr>
+  </tbody>
+</table>
+
+<button class="button" (click)="Back()">Back</button>

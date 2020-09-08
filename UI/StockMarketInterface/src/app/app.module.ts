@@ -14,6 +14,10 @@ import { ImportComponent } from './Admin/import/import.component';
 import { ManageCompanyComponent } from './Admin/manage-company/manage-company.component';
 import { UpdateIPOComponent } from './Admin/update-ipo/update-ipo.component';
 import { AdminService } from './Shared/admin.service';
+import { ImportService } from './Shared/import.service';
+import { ViewCompanyComponent } from './Admin/view-company/view-company.component';
+import { ViewIPOComponent } from './Admin/view-ipo/view-ipo.component';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +30,9 @@ import { AdminService } from './Shared/admin.service';
     SignUpComponent,
     ImportComponent,
     ManageCompanyComponent,
-    UpdateIPOComponent
+    UpdateIPOComponent,
+    ViewCompanyComponent,
+    ViewIPOComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +40,7 @@ import { AdminService } from './Shared/admin.service';
     FormsModule,
     HttpClientModule
   ],
-  providers: [AdminService],
+  providers: [AdminService, ImportService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "TI8cEwBIVaTBn3anl/Bhw3z+sf1GMCaan3lBJOExyRA8EHcBVCzWqGaG9MjJ7sjUi5F35W4yWhovASyfEo1vMA==",
+  "dgSpecHash": "iDmc3fjXQv/s6pVsa3u/VS5VG+otQHjNJ0QmeDdtErr2l5lxswqw/mQMyeCg/8aiLGB63FQIdoOL3a9f2uy00Q==",
   "success": true,
   "projectFilePath": "E:\\dotnetprojects\\NikitaGupta_StockMarket\\Middleware\\StockMarket\\StockMarket.AdminAPI\\StockMarket.AdminAPI.csproj",
   "expectedPackageFiles": [

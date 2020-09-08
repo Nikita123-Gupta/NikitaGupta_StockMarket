@@ -9,6 +9,8 @@ import { SignUpComponent } from './User/sign-up/sign-up.component';
 import { ImportComponent } from './Admin/import/import.component';
 import { ManageCompanyComponent } from './Admin/manage-company/manage-company.component';
 import { UpdateIPOComponent } from './Admin/update-ipo/update-ipo.component';
+import { ViewCompanyComponent } from './Admin/view-company/view-company.component';
+import { ViewIPOComponent } from './Admin/view-ipo/view-ipo.component';
 
 
 const routes: Routes = [
@@ -21,6 +23,8 @@ const routes: Routes = [
   { path: 'import', component: ImportComponent },
   { path: 'manage-company', component: ManageCompanyComponent },
   { path: 'update-ipo', component: UpdateIPOComponent },
+  { path: 'view-company', component: ViewCompanyComponent },
+  { path: 'view-ipo', component: ViewIPOComponent },
   { path: '', redirectTo: 'home-page', pathMatch:"full"}
 ];
 

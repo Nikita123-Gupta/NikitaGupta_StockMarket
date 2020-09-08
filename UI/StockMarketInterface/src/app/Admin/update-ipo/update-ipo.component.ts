@@ -10,7 +10,7 @@ import { AdminService } from '../../Shared/admin.service';
 export class UpdateIPOComponent implements OnInit {
   list: IpoDetails[] = [];
   id: number;
-  code: string;
+  name: string;
   stock: string;
   price: number;
   share: number;
@@ -30,4 +30,60 @@ export class UpdateIPOComponent implements OnInit {
   UpdateIPO() {
     this.router.navigateByUrl('update-ipo');
   }
+  public Get() {
+    this.service.GetAllIpo().subscribe(i => {
+      this.list = i
+      console.log(this.list);
+      localStorage.setItem("list", JSON.stringify(this.list));
+      this.router.navigateByUrl('view-ipo');
+    }, (error) => {
+      console.log(error)
+      console.log(error.error.text)
+    })
+    
+  }
+  public Add() {
+
+    this.obj = new IpoDetails();
+    
+    this.obj.CompanyName = this.name;
+    this.obj.StockExchange = this.stock;
+    this.obj.Price = this.price;
+    this.obj.TotalShares = this.share;
+    this.obj.DateTime = this.datetime;
+    this.obj.Remarks = this.remarks;
+    console.log(this.obj);
+    this.service.AddIpo(this.obj).subscribe((response) => {
+      console.log(response);
+    }, (error) => {
+      console.log(error)
+      console.log(error.error.text)
+    })
+  }
+  public Update() {
+    this.obj = {
+      Id: this.id,
+      CompanyName: this.name,
+      StockExchange: this.stock,
+      Price: this.price,
+      TotalShares: this.share,
+      DateTime: this.datetime,
+      Remarks: this.remarks
+    };
+    this.service.UpdateIpo(this.obj).subscribe(i => {
+      console.log(i)
+    }, (error) => {
+      console.log(error)
+      console.log(error.error.text)
+    })
+  }
+  public Delete() {
+    this.service.DeleteIpo(this.id).subscribe(res => {
+      console.log(res);
+    }, (error) => {
+      console.log(error)
+      console.log(error.error.text)
+    })
+  }
+
 }

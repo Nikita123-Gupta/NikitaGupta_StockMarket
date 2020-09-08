@@ -1,6 +1,6 @@
 export class IpoDetails {
   Id: number;
-  CustomerCode: string;
+  CompanyName: string;
   StockExchange: string;
   Price: number;
   TotalShares: number;

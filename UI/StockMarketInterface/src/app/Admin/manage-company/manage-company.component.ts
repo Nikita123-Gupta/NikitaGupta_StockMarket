@@ -8,12 +8,14 @@ import { AdminService } from '../../Shared/admin.service';
   styleUrls: ['./manage-company.component.css']
 })
 export class ManageCompanyComponent implements OnInit {
-  list: Company[] = [];
+  list: Company[]=[] ;
   code: string;
   name: string;
   ceo: string;
   obj: Company;
-  constructor(private service: AdminService, private router: Router) { }
+  constructor(private service: AdminService, private router: Router) {
+    
+  }
 
   ngOnInit(): void {
   }
@@ -28,9 +30,13 @@ export class ManageCompanyComponent implements OnInit {
   }
   public Get() {
     this.service.GetAllCompany().subscribe(i => {
-      this.list = i
-      console.log(this.list)
+      this.list = i;
+      console.log(this.list);
+      localStorage.setItem("list", JSON.stringify(this.list));
+      this.router.navigateByUrl('view-company');
     })
+
+    
   }
 
   public Add() {

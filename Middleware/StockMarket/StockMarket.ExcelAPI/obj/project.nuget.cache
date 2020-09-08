@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "G1tmkzNc8c4fabDXR9FV1oJbqeE8eFvdEauWmkwnH0vgR2O754xWRiCaOJVdJnMiwRsojvtWgItA+/UNdzwsiw==",
+  "dgSpecHash": "rv5Zq6kphTeg0En7eBf+GjCG9FF4VI4ZIzv8FnKr6y11eAs7hh9PpogqJ6TvdJZuAx4X12XDzTgv2Rdd1rPLXA==",
   "success": true,
   "projectFilePath": "E:\\dotnetprojects\\NikitaGupta_StockMarket\\Middleware\\StockMarket\\StockMarket.ExcelAPI\\StockMarket.ExcelAPI.csproj",
   "expectedPackageFiles": [

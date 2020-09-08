@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "DCM8Za3ROjWK3be0adwyR/NNI9UPsHI7ekw5o2aRUYq12REhhbQdapCfAUo/uKsU55OZ7Jkpd0eqhQIKi9+OsA==",
+  "dgSpecHash": "qz0wRT1jFoaYJjS0w3mqSIJmj5cds6+q7eKjDxwkM/BS0St1c0jWj5QFdLfCDpFVc4yG2nDCBC3ApBGBMXTQCg==",
   "success": true,
   "projectFilePath": "E:\\dotnetprojects\\NikitaGupta_StockMarket\\Middleware\\StockMarket\\StockMarket.AccountAPI\\StockMarket.AccountAPI.csproj",
   "expectedPackageFiles": [

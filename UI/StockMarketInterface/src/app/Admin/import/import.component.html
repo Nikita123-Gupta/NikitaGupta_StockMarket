@@ -15,9 +15,9 @@
   <table>
     <tr>
       <td>Select the file path to be uploaded</td>
-      <td><input type="text"></td>
-      <td> <input type="button"  value="Upload" style="float: right"></td>
+      <td><input type="text" [(ngModel)]="path"></td>
+      <td> <input type="button"  value="Upload" style="float: right" (click)="Upload()"></td>
     </tr>
   </table>
 </div>
-<button class="bttn">Download In Excel</button>
+<button class="bttn" (click)="Export()">Download In Excel</button>
